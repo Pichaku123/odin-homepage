@@ -3,28 +3,88 @@
     padding: 0;
     box-sizing: border-box;
     --bg-main: #fffff4;
-    --bg-color: aqua;
+    --bg-color: #008c9e;
     --global-margin: 0rem 2rem;
 }
 
-header{
+body{
     background-color: var(--bg-main);
-    margin: var(--global-margin);
+    font-family: "Roboto", sans-serif;
 }
 
-#intro-img{
-    max-width: 200px;
-    height: auto;
+.headings{
+    font-family: "Playfair Display", sans-serif;
+}
+
+header{
+    padding: var(--global-margin);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid black;
+    min-height: 100vh;
+}
+
+.header-bg-shape{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: var(--bg-color);
+    z-index: -1;
+    transform: skewY(-15deg);
+}
+
+#profile-image-container{
+    background-image: url("./images/cat.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 250px;
+    height: 250px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 8px;
+}
+
+#name-text{
+    text-align: left;
+    font-size: 2.4rem;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    color: white;
+    transform: translateX(-50%);
+}
+
+#about-title{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+header > p{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+#social-links-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .social-links{
-    height: 20px;
-    width: 20px;
+    height: 3rem;
+    width: 3rem;
 }
 
 section{
-    background-color: var(--bg-main);
-    margin: var(--global-margin);
+    padding: var(--global-margin);
 }
 
 .project{
@@ -36,7 +96,7 @@ footer{
 }
 
 .footer-content{
-    margin: var(--global-margin);
+    padding: var(--global-margin);
 }
 
 #footer-img{

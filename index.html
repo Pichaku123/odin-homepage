@@ -5,13 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Homepage</title>
         <link href="styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img id="intro-img" src="./images/cat.jpg" alt="intro-img" />
-            <h1 id="name-text">Priyanshu Bisht</h1>
-            <h1 id="about-title">About Me</h1>
-
+            <div class="header-bg-shape"></div>
+            <div id="profile-image-container">
+                <h1 id="name-text" class="headings">Priyanshu Bisht</h1>
+            </div>
+            <h1 id="about-title" class="headings">About Me</h1>
+            
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -22,30 +27,32 @@
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
 
-            <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
-                alt="twitter-link"
-                class="social-links"
-            />
-            <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                alt="github-link"
-                class="social-links"
-            />
-            <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-                alt="linkedin-link"
-                class="social-links"
-            />
+            <div id="social-links-wrapper">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
+                    alt="twitter-link"
+                    class="social-links"
+                />
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    alt="github-link"
+                    class="social-links"
+                />
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+                    alt="linkedin-link"
+                    class="social-links"
+                />
+            </div>
         </header>
 
         <section>
-            <h1 id="work-title">My Work</h1>
+            <h1 id="work-title" class="headings">My Work</h1>
 
             <div class="project">
                 <div class="top">Screenshot of project</div>
                 <div class="bottom">
-                    <h2>Project Title</h2>
+                    <h2 class="headings">Project Title</h2>
                     <p>
                         Short description of the project. Just a couple
                         sentences will do.
@@ -56,7 +63,7 @@
             <div class="project">
                 <div class="top">Screenshot of project</div>
                 <div class="bottom">
-                    <h2>Project Title</h2>
+                    <h2 class="headings">Project Title</h2>
                     <p>
                         Short description of the project. Just a couple
                         sentences will do.
@@ -67,7 +74,7 @@
             <div class="project">
                 <div class="top">Screenshot of project</div>
                 <div class="bottom">
-                    <h2>Project Title</h2>
+                    <h2 class="headings">Project Title</h2>
                     <p>
                         Short description of the project. Just a couple
                         sentences will do.
@@ -78,7 +85,7 @@
             <div class="project">
                 <div class="top">Screenshot of project</div>
                 <div class="bottom">
-                    <h2>Project Title</h2>
+                    <h2 class="headings">Project Title</h2>
                     <p>
                         Short description of the project. Just a couple
                         sentences will do.
@@ -89,7 +96,7 @@
             <div class="project">
                 <div class="top">Screenshot of project</div>
                 <div class="bottom">
-                    <h2>Project Title</h2>
+                    <h2 class="headings">Project Title</h2>
                     <p>
                         Short description of the project. Just a couple
                         sentences will do.
@@ -100,7 +107,7 @@
             <div class="project">
                 <div class="top">Screenshot of project</div>
                 <div class="bottom">
-                    <h2>Project Title</h2>
+                    <h2 class="headings">Project Title</h2>
                     <p>
                         Short description of the project. Just a couple
                         sentences will do.
@@ -111,7 +118,7 @@
 
         <footer>
             <div class="footer-content">
-                <h1>Contact me</h1>
+                <h1 class="headings">Contact me</h1>
                 <h2>
                     Please get in touch if you think our work could be mutually
                     beneficial!
