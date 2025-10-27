@@ -30,7 +30,6 @@ header {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    min-height: 100vh;
 }
 
 .header-bg-shape {
@@ -195,7 +194,8 @@ footer {
     }
 
     header {
-        min-height: 100%;
+        min-height: 75vh;
+        padding-top: 2rem;
     }
 
     .header-card {
@@ -205,6 +205,7 @@ footer {
         max-width: 80vw;
         margin: 0 auto;
         padding: 2rem;
+        gap: 2rem;
         background-color: var(--bg-main);
         border-radius: 16px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -214,8 +215,7 @@ footer {
 
     #about-title {
         text-align: center;
-        padding-top: 1.5rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .header-right > p {
@@ -225,7 +225,7 @@ footer {
     }
 
     .header-left {
-        width: 50%;
+        width: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -239,13 +239,11 @@ footer {
         width: 100%;
         height: auto;
         border-radius: 20px;
-        transform: scale(1.2);
-        transform-origin: center;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     }
 
     .header-right {
-        max-width: 50%;
+        max-width: 60%;
         padding-left: 2rem;
     }
 
@@ -291,16 +289,29 @@ footer {
         --global-side-padding: 0rem 10rem;
     }
 
+    header{
+        min-height: 70vh;
+        padding-top: 2rem;
+    }
+
     #about-title {
         text-align: center;
         padding-top: 1.5rem;
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
     
+    .header-left{
+        width: 35%;
+    }
+
+    .header-right{
+        width: 65%;
+    }
+
     .header-right > p {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         padding-top: 1rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     .project-wrapper {
@@ -325,12 +336,14 @@ footer {
         flex-direction: column;
         justify-content: center;
         gap: 1.5rem;
+        padding-left: 8rem;
     }
 
     #footer-img{
         position: relative;
-        width: 45%;
+        width: 35%;
         height: auto;
         padding-top: 0;
+        padding-right: 8rem;
     }
 }
